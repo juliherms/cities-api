@@ -12,11 +12,13 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.data.geo.Point;
+import org.springframework.stereotype.Service;
 
 import com.cities.citiesapi.entity.City;
 import com.cities.citiesapi.repository.CityRepository;
 import com.cities.citiesapi.utils.StringLocationUtils;
 
+@Service
 public class DistanceService {
 
 	private final CityRepository cityRepository;

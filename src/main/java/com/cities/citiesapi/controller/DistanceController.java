@@ -11,6 +11,11 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cities.citiesapi.service.DistanceService;
 import com.cities.citiesapi.service.EarthRadius;
 
+/**
+ * Class responsible to calculate distance between cities.
+ * @author j.a.vasconcelos
+ *
+ */
 @RestController
 @RequestMapping("/distances")
 public class DistanceController {
