@@ -36,3 +36,7 @@ select earth_distance(
     ll_to_earth(-22.01740074157715,-47.88600158691406)
 ) as distance;
 ```
+
+## API Documentation:
+
+<img src="img/swagger.png">
