@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cities.citiesapi.entity.Country;
 import com.cities.citiesapi.service.CountryService;
 
+import io.swagger.annotations.Api;
+
 /**
  * End point countries
  * 
@@ -18,6 +20,7 @@ import com.cities.citiesapi.service.CountryService;
  */
 @RestController
 @RequestMapping("countries")
+@Api(tags="/countries", value="Grupo de API's para manipulação de paises")
 public class CountryController {
 
 	@Autowired

@@ -10,19 +10,22 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cities.citiesapi.entity.State;
 import com.cities.citiesapi.service.StateService;
 
+import io.swagger.annotations.Api;
+
 /**
-* End point countries
-* 
-* @author j.a.vasconcelos
-*
-*/
+ * End point countries
+ * 
+ * @author j.a.vasconcelos
+ *
+ */
 @RestController
-@RequestMapping("staties")
+@RequestMapping("states")
+@Api(tags = "/states", value = "Grupo de API's para manipulação de estados")
 public class StateController {
 
 	@Autowired
 	private StateService service;
-	
+
 	/**
 	 * List all states
 	 * 

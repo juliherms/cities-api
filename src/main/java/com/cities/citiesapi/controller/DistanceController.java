@@ -11,6 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.cities.citiesapi.service.DistanceService;
 import com.cities.citiesapi.service.EarthRadius;
 
+import io.swagger.annotations.Api;
+
 /**
  * Class responsible to calculate distance between cities.
  * @author j.a.vasconcelos
@@ -18,6 +20,7 @@ import com.cities.citiesapi.service.EarthRadius;
  */
 @RestController
 @RequestMapping("/distances")
+@Api(tags="/distances", value="Grupo de API's para calculo de distância entre cidades")
 public class DistanceController {
 
 	Logger log = LoggerFactory.getLogger(DistanceController.class);

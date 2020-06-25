@@ -15,11 +15,12 @@ import com.cities.citiesapi.service.CityService;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 /**
- * Endpoint cities
+ * End point cities
  * 
  * @author j.a.vasconcelos
  *
@@ -52,8 +53,8 @@ public class CityController {
 	 * @return
 	 */
 	@GetMapping("/{name}")
-	@ApiOperation(value = "API responsável por retornar uma cidade por nome informado.")
-	public City findByName(@PathVariable("name") String name) {
+	@ApiOperation(value = "API responsável por retornar uma cidade por nome informado.", response = City.class)
+	public City findByName(@ApiParam(name="name",value ="nome de uma cidade", required = true) @PathVariable("name") String name) {
 
 		return service.findByName(name);
 	}
