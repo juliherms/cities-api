@@ -1,5 +1,5 @@
 
-# Citeis-API
+# Cities-API
 
 Example application for managing cities, states and countries and calculating the distance (geolocation) between them
 
