@@ -23,7 +23,9 @@ Example application for managing cities, states and countries and calculating th
 Point 
 
 ```sh
-select ((select lat_lon from cidade where id = 4929) <@> (select lat_lon from cidade where id=5254)) as distance;
+select ((select lat_lon from cidade where id = 4929) 
+<@>
+ (select lat_lon from cidade where id=5254)) as distance;
 ```
 
 Cube
