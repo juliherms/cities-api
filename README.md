@@ -37,6 +37,6 @@ select earth_distance(
 ) as distance;
 ```
 
-## API Documentation:
+## Swagger
 
 <img src="img/swagger.png">
