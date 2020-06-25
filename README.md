@@ -39,4 +39,8 @@ select earth_distance(
 
 ## Swagger
 
+https://juliherms-cities-api.herokuapp.com/swagger-ui.html#/
+
 <img src="img/swagger.png">
+
+
